@@ -5,9 +5,3 @@ package org.example
 fun main() {
     println("Hello, world!")
 }
-
-fun max(a: Int, b: Int): Int {
-//    "if" is an expression.
-//    so Kotlin has no ternary operator.
-    return if (a > b) a else b
-}
