@@ -1,4 +1,4 @@
-package ch02.ex3_2_1_WhenEnums
+package ch02.whenenums
 
 import ch02.colors.Color
 
