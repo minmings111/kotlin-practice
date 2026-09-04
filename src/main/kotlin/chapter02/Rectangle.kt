@@ -1,4 +1,4 @@
-package chapter02
+package chapter02.shapes // package declaration
 
 class Rectangle(val height: Int, val width: Int) {
     // on the go property
@@ -6,4 +6,8 @@ class Rectangle(val height: Int, val width: Int) {
         get() {
             return height == width
         }
+}
+
+fun createUnitSquare() : Rectangle {
+    return Rectangle(1, 1)
 }
