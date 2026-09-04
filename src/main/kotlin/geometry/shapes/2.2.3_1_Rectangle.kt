@@ -1,13 +1,14 @@
-package chapter02.shapes // package declaration
+package geometry.shapes
 
 class Rectangle(val height: Int, val width: Int) {
-    // on the go property
+    // true if height and width are same.
     val isSquare: Boolean
         get() {
             return height == width
         }
 }
 
-fun createUnitSquare() : Rectangle {
+// Make a 1 x 1 square.
+fun createUnitSquare(): Rectangle {
     return Rectangle(1, 1)
 }

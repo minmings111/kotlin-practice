@@ -1,4 +1,4 @@
-package chapter02
+package ch02.basics
 
 fun canPerformOperation(): Boolean {
     return true

@@ -1,4 +1,4 @@
-package chapter02
+package ch02.classes
 
 fun main() {
     val person = Person("Bob", true)

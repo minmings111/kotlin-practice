@@ -1,4 +1,4 @@
-package chapter02
+package ch02.basics
 
 val question: String = "life, universe and question of everything"
 val answer: Int = 42
