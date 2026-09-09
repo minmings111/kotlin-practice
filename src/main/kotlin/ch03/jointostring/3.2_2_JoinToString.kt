@@ -1,7 +1,6 @@
 package ch03.jointostring
 
-fun <T> joinToString(
-    collection: Collection<T>,
+fun <T> Collection<T>.joinToString(
     separator: String = ",", // default
     prefix: String = "",
     postfix: String = ""
@@ -9,7 +8,7 @@ fun <T> joinToString(
 
     val result = StringBuilder(prefix)
 
-    for ((index, element) in collection.withIndex()) {
+    for ((index, element) in this.withIndex()) {
         if (index > 0) result.append(separator)
         result.append(element)
     }
@@ -20,5 +19,5 @@ fun <T> joinToString(
 
 fun main() {
     val list = listOf(1, 2, 3)
-    println(joinToString(list, "; ", "(", ")"))
+    println(list.joinToString("; ", "(", ")"))
 }
