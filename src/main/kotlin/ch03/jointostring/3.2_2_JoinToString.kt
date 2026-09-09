@@ -17,7 +17,14 @@ fun <T> Collection<T>.joinToString(
     return result.toString()
 }
 
+fun Collection<String>.join(
+    separator: String = ",", // default
+    prefix: String = "",
+    postfix: String = ""
+) = joinToString(separator, prefix, postfix)
+
 fun main() {
     val list = listOf(1, 2, 3)
     println(list.joinToString("; ", "(", ")"))
+    println(listOf("one", "two", "eight").join(""))
 }
