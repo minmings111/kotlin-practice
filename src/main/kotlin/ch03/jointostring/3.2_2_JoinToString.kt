@@ -2,9 +2,9 @@ package ch03.jointostring
 
 fun <T> joinToString(
     collection: Collection<T>,
-    separator: String,
-    prefix: String,
-    postfix: String
+    separator: String = ",", // default
+    prefix: String = "",
+    postfix: String = ""
 ): String {
 
     val result = StringBuilder(prefix)
